@@ -1,6 +1,6 @@
 # Ex.No: 4 check the given number is Armstrong number or not and inspect for failures.
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:10/04/2025                                                                            
+### REGISTER NUMBER : 212222040147
 ### AIM: 
 Write a python program to check the number is Armstrong number or not and inspect for failures.
 
@@ -16,26 +16,64 @@ Write a python program to check the number is Armstrong number or not and inspec
 9.	Stop the program.
 
 ### Program:
+```
+x = input("Enter a number: ")
 
+if x.isnumeric():
+    x = int(x)
+    temp = x
+    cube = 0
+    while temp > 0:
+        digit = temp % 10
+        cube += digit ** 3
+        temp //= 10
+    if cube == x:
+        print("Armstrong Number")
+    else:
+        print("Not Armstrong Number")
+else:
+    print("Enter a Positive Integer.")
 
-
-
-
-
-
-
-
-
-
-
-
+```
 ### Output:
+```
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: 143
+Not Armstrong Number
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: 25
+Not Armstrong Number
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: 
+Enter a Positive Integer.
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: String
+Enter a Positive Integer.
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: A
+Enter a Positive Integer.
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: !@#
+Enter a Positive Integer.
 
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: -10
+Enter a Positive Integer.
+
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: 0
+Armstrong Number
+
+======================== RESTART: C:/Users/DELL/EX 04.py =======================
+Enter a number: 1
+Armstrong Number
+
+```
 ### Result:
 Thus, the python program to check the number is Armstrong number or not implemented and the output is verified successfully.
 
