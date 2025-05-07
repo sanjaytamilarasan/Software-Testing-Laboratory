@@ -1,23 +1,22 @@
-### EX NO: 05
-### REG :212222040147
-### DATE : 24/04/25
+## EX: 5 BINARY SEARCH 
+### Date: 17/04/2025
+### Register Number:212222040147
 ### AIM: 
-Write a python program to check the number is Armstrong number or not and inspect for failures.
+Write a python program for Binary Search and inspect for failures. 
 
 ### Algorithm:
 
-1.  Start the program.
-2.	Read an integer input number.
-3.	Initialize the variables current_digit, sum = 0, and num = number.
-4.	Repeat Steps 5 to 7 until num > 0
-5.	current_digit = (num % 10).
-6.	sum = sum + (current_digit * current_digit * current_digit). 7. Stop the program.
-7.	num = num / 10.
-8.	Check if sum == number. If true, print "It is an Armstrong Number." Otherwise, print "It is not an Armstrong Number."
-9.	Stop the program.
+1. Start the program. 
+2. Get the list from the user 
+3. Get the element to be searched 
+4. Compare the mid element with the key, if same return the index 
+5. If key is greater, search it in the right side, else search it in the left side. 
+6. If not found return -1 
+7. Stop the program. 
 
 ### Program:
-```
+
+
 def binary_search(arr, x):  
     low = 0
     high = len(arr) - 1
@@ -45,43 +44,12 @@ try:
     else: 
         print("Element is not present in array")
 except:
-    print("Enter a valid input!")
+    print("Enter a valid input!")
 
-```
+
+
 ### Output:
-```
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: 10
-Element is present at index 3
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: abc
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: 3.5
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: @#$
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: -
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: 
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: two
-Enter a valid input!
-
-========================== RESTART: C:/python/EX 04.py =========================
-Enter the element to be searched: 10 20
-Enter a valid input!
-```
+![Screenshot 2025-04-17 091638](https://github.com/user-attachments/assets/9bff2fe7-329d-4439-abfa-2ec6e4e6336c)
 ### Result:
-Thus, the python program to check the number is Armstrong number or not implemented and the output is verified successfully.
-
+Thus, the python program of binary search is implemented and the output is verified 
+successfully.
